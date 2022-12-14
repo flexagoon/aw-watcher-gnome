@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "aw-watcher-gnome"
+version = "1.0.0"
+description = "A DBus-based window+afk watcher for ActivityWatch and GNOME"
+authors = ["flexagoon <contact@flexagoon.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://flexagoon.com"
+repository = "https://github.com/flexagoon/aw-watcher-gnome"
+
+[tool.poetry.scripts]
+aw-watcher-gnome = "aw_watcher_gnome:main"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pydbus = "^0.6.0"
+aw-client = "^0.5.9"
+aw-core = "^0.5.10"
+PyGObject = "^3.42.2"
+
+[tool.poetry.dev-dependencies]
+pyinstaller = {version = "^5.7.0", python = "<3.12"}
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

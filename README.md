@@ -7,8 +7,8 @@ You need the following in order to use this watcher:
 
 - Install and set up [ActivityWatch](https://activitywatch.net)
 - Install the
-  [Focused Window DBus](https://github.com/flexagoon/focused-window-dbus) shell
-  extension
+  [Focused Window DBus](https://extensions.gnome.org/extension/5592/focused-window-d-bus)
+  shell extension
 
 # Installation
 

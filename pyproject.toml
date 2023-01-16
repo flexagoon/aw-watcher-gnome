@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "aw-watcher-gnome"
-version = "1.0.0"
+version = "1.1.0"
 description = "A DBus-based window+afk watcher for ActivityWatch and GNOME"
 authors = ["flexagoon <contact@flexagoon.com>"]
 license = "MIT"

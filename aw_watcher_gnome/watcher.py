@@ -34,7 +34,7 @@ class GnomeWatcher:
         sb = SessionBus()
         try:
             self.FocusedWindow = sb.get(
-                "org.gnome.Shell", "/org/gnome/Shell/Extensions/FocusedWindow"
+                "org.gnome.Shell", "/org/gnome/shell/extensions/FocusedWindow"
             )
         except:
             raise Exception(

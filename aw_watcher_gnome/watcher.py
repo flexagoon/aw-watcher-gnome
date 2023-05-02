@@ -122,7 +122,7 @@ class GnomeWatcher:
                             datetime.now(timezone.utc) - last_input_before_sleep
                         ).seconds * 1000
                         last_input_before_sleep = None
-                        logger.info("Computer is no longer")
+                        logger.info("Computer is no longer sleeping")
                     else:
                         idle_time = self.IdleMonitor.GetIdletime()
                     self.send_afk_event(idle_time)

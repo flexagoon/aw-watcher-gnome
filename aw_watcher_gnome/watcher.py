@@ -115,8 +115,9 @@ class GnomeWatcher:
                         ) - timedelta(seconds=idle_time)
                         logger.info("Computer is sleeping")
                 else:
-                    window = get_window(window_data)
-                    self.send_window_heartbeat(window)
+                    if window_data:
+                        window = get_window(window_data)
+                        self.send_window_heartbeat(window)
                     if last_input_before_sleep != None:
                         idle_time = (
                             datetime.now(timezone.utc) - last_input_before_sleep

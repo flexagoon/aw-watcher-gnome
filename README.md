@@ -20,8 +20,22 @@ project from source. You need to have `poetry` installed.
 1. `poetry install`
 2. `poetry run pyinstaller --clean aw-watcher-gnome.spec`
 3. Copy the `dist/aw-watcher-gnome` directory to your ActivityWatch directory.
-4. In the ActivityWatch config directory, open `aw-qt/aw-qt.toml`
-5. In `autostart_modules`, replace `"aw-server", "aw-watcher-afk"` with
+
+## Autostart
+
+### With aw-qt
+
+1. In the ActivityWatch config directory, open `aw-qt/aw-qt.toml`
+2. In `autostart_modules`, replace `"aw-server", "aw-watcher-afk"` with
    `"aw-watcher-gnome"` (if the lines in the file are commented out, uncomment
    them)
-6. Restart `aw-qt`
+3. Restart `aw-qt`
+
+### With systemd
+
+1. Disable aw-qt or any other autostart methods, if they are enabled
+2. Copy the services from the
+   [systemd](https://github.com/flexagoon/aw-watcher-gnome/tree/main/systemd)
+   directory to `~/.local/share/systemd/user`
+3. Run
+   `systemctl enable --user --now aw-server && systemctl enable --user --now aw-watcher-gnome`

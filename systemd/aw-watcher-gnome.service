@@ -1,0 +1,15 @@
+[Unit]
+Description=aw-watcher-gnome
+Wants=aw-server.service
+After=aw-server.service
+
+[Service]
+Type=simple
+ExecStartPre=/bin/sleep 3
+ExecStart=/opt/activitywatch/aw-watcher-gnome/aw-watcher-gnome
+Restart=always
+RestartSec=3
+TimeoutStopSec=infinity
+
+[Install]
+WantedBy=graphical-session.target

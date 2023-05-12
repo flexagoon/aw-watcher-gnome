@@ -1,0 +1,13 @@
+[Unit]
+Description=aw-server
+After=gnome-session.target
+
+[Service]
+Type=simple
+ExecStart=/opt/activitywatch/aw-server/aw-server
+Restart=always
+RestartSec=1
+TimeoutStopSec=infinity
+
+[Install]
+WantedBy=gnome-session.target

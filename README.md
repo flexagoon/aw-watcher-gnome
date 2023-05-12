@@ -1,7 +1,9 @@
+# aw-watcher-gnome
+
 A DBus-based ActivityWatch watcher for GNOME. It allows you to use ActivityWatch
 on GNOME under Wayland.
 
-# Prerequisites
+## Prerequisites
 
 You need the following in order to use this watcher:
 
@@ -10,7 +12,7 @@ You need the following in order to use this watcher:
   [Focused Window DBus](https://extensions.gnome.org/extension/5592/focused-window-d-bus)
   shell extension
 
-# Installation
+## Installation
 
 I currently do not provide pre-built binaries, so you'll need to compile the
 project from source. You need to have `poetry` installed.

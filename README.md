@@ -1,3 +1,12 @@
+# WARNING
+
+This watcher is no longer maintained. It probably still works, But I'll no longer fix it if it breaks. It is recommended to use [awatcher](https://github.com/2e3s/awatcher) instead.
+
+---
+
+<details>
+<summary>Previous readme</summary>
+
 # aw-watcher-gnome
 
 A DBus-based ActivityWatch watcher for GNOME. It allows you to use ActivityWatch
@@ -39,3 +48,5 @@ project from source. You need to have `poetry` installed.
    directory to `~/.local/share/systemd/user`
 3. Run
    `systemctl enable --user --now aw-server && systemctl enable --user --now aw-watcher-gnome`
+
+</details>
